@@ -12,7 +12,7 @@ const mongoUrl = process.env.DB_URL;
 
 // Enable CORS for frontend
 app.use(cors({
-    origin: ['http://localhost:3000', 'https://bazarxpress-server.onrender.com'],
+    origin: ['http://localhost:3000', 'https://bazar-xpress-iota.vercel.app'],
     credentials: true
 }));
 // Parse JSON bodies
