@@ -11,7 +11,10 @@ const port = process.env.PORT || 4000;
 const mongoUrl = process.env.DB_URL;
 
 // Enable CORS for frontend
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+app.use(cors({
+    origin: ['http://localhost:3000', 'https://bazar-xpress-iota.vercel.app/'],
+    credentials: true
+}));
 // Parse JSON bodies
 app.use(bodyParser.json());
 
